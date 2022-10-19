@@ -28,8 +28,8 @@ export default function Profile() {
 
             <main className={styles.main}>
                 <section className="container mx-auto">
-                    <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md pl-5">
-                        <div>
+                    <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md">
+                        <div className="border-b dark:border-gray-700 p-5">
                             <div className="bg-white shadow-md rounded-lg w-10 h-10 absolute right-5 md:right-44 p-2">
                                 <PencilSquareIcon className="text-purple-800 w-6 h-6"/>
                             </div>
@@ -39,18 +39,14 @@ export default function Profile() {
                             <span className="text-xl font-medium">Example Name</span>
                         </div>
 
-                        <hr className="my-5 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-
-                        <div>
+                        <div className="border-b dark:border-gray-700 p-5">
                             <label className="mr-2">
                                 <EnvelopeOpenIcon className="text-purple-800 w-6 h-6 float-left"/>
                             </label>
                             <span className="text-zinc-500">user@example.com</span>
                         </div>
 
-                        <hr className="my-5 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-
-                        <div className="mb-5">
+                        <div className="p-5">
                             <label className="mr-2">
                                 <DevicePhoneMobileIcon className="text-purple-800 w-6 h-6 float-left"/>
                             </label>
@@ -58,112 +54,99 @@ export default function Profile() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-20 pl-5">
-                        <div>
-                            <label className="mr-2">
-                                <ChatBubbleLeftRightIcon className="text-purple-800 w-6 h-6 float-left"/>
-                            </label>
-                            <span className="text-zinc-500">Destek</span>
-                            <span
-                                className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 ml-10">Yeni</span>
-                            <label>
+                    <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-20">
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 w-full h-full p-5">
+                            <div>
+                                <label className="mr-2">
+                                    <ChatBubbleLeftRightIcon className="text-purple-800 w-6 h-6 float-left"/>
+                                </label>
+                                <span className="text-zinc-500">Destek</span>
+                                <span className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 ml-10">Yeni</span>
                                 <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
-                            </label>
-                        </div>
+                            </div>
+                        </a>
 
-                        <hr className="my-5 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-
-                        <div>
-                            <label className="mr-2">
-                                <MapPinIcon className="text-purple-800 w-6 h-6 float-left"/>
-                            </label>
-                            <span className="text-zinc-500">Adreslerim</span>
-                            <label>
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 w-full h-full p-5">
+                            <div>
+                                <label className="mr-2">
+                                    <MapPinIcon className="text-purple-800 w-6 h-6 float-left"/>
+                                </label>
+                                <span className="text-zinc-500">Adreslerim</span>
                                 <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
-                            </label>
-                        </div>
+                            </div>
+                        </a>
 
-                        <hr className="my-5 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-
-                        <div>
-                            <label className="mr-2">
-                                <BookmarkIcon className="text-purple-800 w-6 h-6 float-left"/>
-                            </label>
-                            <span className="text-zinc-500">Derslerim</span>
-                            <label>
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 w-full h-full p-5">
+                            <div>
+                                <label className="mr-2">
+                                    <BookmarkIcon className="text-purple-800 w-6 h-6 float-left"/>
+                                </label>
+                                <span className="text-zinc-500">Derslerim</span>
                                 <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
-                            </label>
-                        </div>
+                            </div>
+                        </a>
 
-                        <hr className="my-5 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-
-                        <div>
-                            <label className="mr-2">
-                                <DocumentCheckIcon className="text-purple-800 w-6 h-6 float-left"/>
-                            </label>
-                            <span className="text-zinc-500">Sonuçlarım</span>
-                            <label>
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 w-full h-full p-5">
+                            <div>
+                                <label className="mr-2">
+                                    <DocumentCheckIcon className="text-purple-800 w-6 h-6 float-left"/>
+                                </label>
+                                <span className="text-zinc-500">Sonuçlarım</span>
                                 <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
-                            </label>
-                        </div>
+                            </div>
+                        </a>
 
-                        <hr className="my-5 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-
-                        <div>
-                            <label className="mr-2">
-                                <CalendarDaysIcon className="text-purple-800 w-6 h-6 float-left"/>
-                            </label>
-                            <span className="text-zinc-500">Randevularım</span>
-                            <span
-                                className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 ml-10">Yeni</span>
-                            <label>
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 w-full h-full p-5">
+                            <div>
+                                <label className="mr-2">
+                                    <CalendarDaysIcon className="text-purple-800 w-6 h-6 float-left"/>
+                                </label>
+                                <span className="text-zinc-500">Randevularım</span>
+                                <span className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 ml-10">Yeni</span>
                                 <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
-                            </label>
-                        </div>
+                            </div>
+                        </a>
 
-                        <hr className="my-5 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-
-                        <div>
-                            <label className="mr-2">
-                                <ComputerDesktopIcon className="text-purple-800 w-6 h-6 float-left"/>
-                            </label>
-                            <span className="text-zinc-500">Canlı Derslerim</span>
-                            <label>
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 w-full h-full p-5">
+                            <div>
+                                <label className="mr-2">
+                                    <ComputerDesktopIcon className="text-purple-800 w-6 h-6 float-left"/>
+                                </label>
+                                <span className="text-zinc-500">Canlı Derslerim</span>
                                 <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
-                            </label>
-                        </div>
+                            </div>
+                        </a>
 
-                        <hr className="my-5 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-
-                        <div className="mb-5">
-                            <label className="mr-2">
-                                <ArrowRightOnRectangleIcon className="text-purple-800 w-6 h-6 float-left"/>
-                            </label>
-                            <span className="text-zinc-500">Çıkış Yap</span>
-                            <label>
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 w-full h-full p-5">
+                            <div>
+                                <label className="mr-2">
+                                    <ArrowRightOnRectangleIcon className="text-purple-800 w-6 h-6 float-left"/>
+                                </label>
+                                <span className="text-zinc-500">Çıkış Yap</span>
                                 <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
-                            </label>
-                        </div>
+                            </div>
+                        </a>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-20 pl-5">
-                        <label className="text-zinc-500 text-xs">Language - Dil</label>
-                        <div className="my-5">
-                            <span className="text-zinc-500">Türkçe</span>
-                            <label>
-                                <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
-                            </label>
-                        </div>
-                    </div>
 
-                    <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-5 pl-5">
-                        <label className="text-zinc-500 text-xs">Versiyon</label>
-                        <div className="my-5">
-                            <span className="text-zinc-500">2.13.12</span>
-                            <label>
-                                <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
-                            </label>
+                        <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-5">
+                            <label className="text-zinc-500 text-xs pl-5">Versiyon</label>
+                            <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 w-full h-full p-5">
+                                <div>
+                                    <span className="text-zinc-500">2.13.12</span>
+                                    <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
+                                </div>
+                            </a>
                         </div>
+
+                    <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-20">
+                        <label className="text-zinc-500 text-xs pl-5">Language - Dil</label>
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 w-full h-full p-5">
+                            <div>
+                                <span className="text-zinc-500">Türkçe</span>
+                                <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
+                            </div>
+                        </a>
                     </div>
                 </section>
             </main>
