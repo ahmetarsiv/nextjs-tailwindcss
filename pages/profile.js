@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import {
     ArrowRightOnRectangleIcon, BellAlertIcon,
     BookmarkIcon, BriefcaseIcon, CalendarDaysIcon,
-    ChatBubbleLeftRightIcon, ChevronRightIcon, ComputerDesktopIcon,
+    ChatBubbleLeftRightIcon, CheckCircleIcon, ChevronRightIcon, ComputerDesktopIcon,
     DevicePhoneMobileIcon, DocumentCheckIcon,
     EnvelopeOpenIcon, HomeIcon, MapPinIcon,
     PencilSquareIcon, SquaresPlusIcon,
@@ -40,6 +40,7 @@ export default function Profile() {
                         <div className="border-b dark:border-gray-700 p-5">
                             <EnvelopeOpenIcon className="text-purple-800 w-6 h-6 mr-2 float-left"/>
                             <span className="text-zinc-500">user@example.com</span>
+                            <CheckCircleIcon className="text-purple-800 w-6 h-6  float-right"/>
                         </div>
 
                         <div className="p-5">
