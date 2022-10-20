@@ -6,6 +6,10 @@ import {
     HomeIcon, InformationCircleIcon, SquaresPlusIcon,
     UserIcon
 } from "@heroicons/react/24/outline";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
+import Header from "./components/header";
+import Alert from "./components/alert";
 
 export default function Input() {
     return (
@@ -16,23 +20,11 @@ export default function Input() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <header className="bg-purple-800 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 text-center">
-                <span className="text-white font-medium text-yellow-400 text-2xl">
-                    <a href="#">table</a>
-                </span>
-            </header>
+            <Header children="input"/>
 
             <main className={styles.main}>
                 <section className="container mx-auto">
-                    <div className="w-full mx-auto bm-12">
-                        <div className="flex bg-blue-100 rounded-lg p-4 mb-4 text-sm text-blue-700" role="alert">
-                            <InformationCircleIcon className="w-5 h-5 inline mr-3"/>
-                            <div>
-                                <span className="font-medium">Info alert! </span>
-                                You can get the input components here
-                            </div>
-                        </div>
-                    </div>
+                    <Alert type="Info alert!" message="You can get the input components here"/>
 
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 p-5">
                         <div className="mb-5">
@@ -67,46 +59,9 @@ export default function Input() {
                 </section>
             </main>
 
-            <footer className={styles.footer}>
-                <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <span className={styles.logo}><Image src="/vercel.svg" alt="Vercel Logo" width={72}
-                                                         height={16}/></span>
-                </a>
-            </footer>
+            <Footer className={styles.footer}/>
 
-            <div className="w-full h-screen">
-                <section id="bottom-navigation" className="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
-                    <div id="tabs" className="flex justify-between">
-                        <a href="#"
-                           className="w-full focus:text-purple-800 hover:text-purple-800 justify-center inline-block text-center pt-2 pb-1">
-                            <HomeIcon className="inline-block mb-1" width="25" height="25"/>
-                            <span className="tab tab-home block text-xs">Home</span>
-                        </a>
-                        <a href="#"
-                           className="w-full focus:text-purple-800 hover:text-purple-800 justify-center inline-block text-center pt-2 pb-1">
-                            <BellAlertIcon className="inline-block mb-1" width="25" height="25"/>
-                            <span className="tab tab-kategori block text-xs">Notification</span>
-                        </a>
-                        <a href="#"
-                           className="w-full focus:text-purple-800 hover:text-purple-800 justify-center inline-block text-center pt-2 pb-1">
-                            <SquaresPlusIcon className="inline-block mb-1" width="25" height="25"/>
-                            <span className="tab tab-explore block text-xs">Exam</span>
-                        </a>
-                        <a href="#"
-                           className="w-full focus:text-purple-800 hover:text-purple-800 justify-center inline-block text-center pt-2 pb-1">
-                            <BriefcaseIcon className="inline-block mb-1" width="25" height="25"/>
-                            <span className="tab tab-whishlist block text-xs">Company</span>
-                        </a>
-                        <a href="#"
-                           className="w-full focus:text-purple-800 hover:text-purple-800 justify-center inline-block text-center pt-2 pb-1">
-                            <UserIcon className="inline-block mb-1" width="25" height="25"/>
-                            <span className="tab tab-account block text-xs">Account</span>
-                        </a>
-                    </div>
-                </section>
-            </div>
+            <Navbar/>
         </div>
 )
 }

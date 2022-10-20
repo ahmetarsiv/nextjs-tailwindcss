@@ -6,6 +6,11 @@ import {
     HomeIcon, InformationCircleIcon, SquaresPlusIcon,
     UserIcon
 } from "@heroicons/react/24/outline";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
+import DataTable from "./components/datatable";
+import Alert from "./components/alert";
 
 export default function Table() {
     return (
@@ -16,237 +21,21 @@ export default function Table() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <header className="bg-purple-800 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 text-center">
-                <span className="text-white font-medium text-yellow-400 text-2xl">
-                    <a href="#">table</a>
-                </span>
-            </header>
+            <Header children="table"/>
 
             <main className={styles.main}>
                 <section className="container mx-auto">
-                    <div className="w-full mx-auto bm-12">
-                        <div className="flex bg-blue-100 rounded-lg p-4 mb-4 text-sm text-blue-700" role="alert">
-                            <InformationCircleIcon className="w-5 h-5 inline mr-3"/>
-                            <div>
-                                <span className="font-medium">Info alert! </span>
-                                It was modeled on the exam results page, task: table
-                            </div>
-                        </div>
-                    </div>
+                    <Alert type="Info alert!" message="It was modeled on the exam results page, task: table"/>
 
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md">
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
-                            <div className="flex items-center">
-                                <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
-                                <div className="inline-flex flex-col w-full">
-                                    <span className="text-purple-800">20 October 2022 09:15</span>
-                                    <span className="text-zinc-500">Exam Name</span>
-                                </div>
-                                <label
-                                    className="bg-yellow-400 text-purple-800 rounded-lg text-xs font-medium p-1 mr-10">Passed</label>
-                                <ChevronRightIcon className="text-purple-800 w-8 h-8"/>
-                            </div>
-                        </a>
+                        <DataTable dateTime="20 October 2022 09:15" examName="Exam Name" isActive="Passed"/>
                     </div>
                 </section>
             </main>
 
-            <footer className={styles.footer}>
-                <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <span className={styles.logo}><Image src="/vercel.svg" alt="Vercel Logo" width={72}
-                                                         height={16}/></span>
-                </a>
-            </footer>
+            <Footer className={styles.footer}/>
 
-            <div className="w-full h-screen">
-                <section id="bottom-navigation" className="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
-                    <div id="tabs" className="flex justify-between">
-                        <a href="#"
-                           className="w-full focus:text-purple-800 hover:text-purple-800 justify-center inline-block text-center pt-2 pb-1">
-                            <HomeIcon className="inline-block mb-1" width="25" height="25"/>
-                            <span className="tab tab-home block text-xs">Home</span>
-                        </a>
-                        <a href="#"
-                           className="w-full focus:text-purple-800 hover:text-purple-800 justify-center inline-block text-center pt-2 pb-1">
-                            <BellAlertIcon className="inline-block mb-1" width="25" height="25"/>
-                            <span className="tab tab-kategori block text-xs">Notification</span>
-                        </a>
-                        <a href="#"
-                           className="w-full focus:text-purple-800 hover:text-purple-800 justify-center inline-block text-center pt-2 pb-1">
-                            <SquaresPlusIcon className="inline-block mb-1" width="25" height="25"/>
-                            <span className="tab tab-explore block text-xs">Exam</span>
-                        </a>
-                        <a href="#"
-                           className="w-full focus:text-purple-800 hover:text-purple-800 justify-center inline-block text-center pt-2 pb-1">
-                            <BriefcaseIcon className="inline-block mb-1" width="25" height="25"/>
-                            <span className="tab tab-whishlist block text-xs">Company</span>
-                        </a>
-                        <a href="#"
-                           className="w-full focus:text-purple-800 hover:text-purple-800 justify-center inline-block text-center pt-2 pb-1">
-                            <UserIcon className="inline-block mb-1" width="25" height="25"/>
-                            <span className="tab tab-account block text-xs">Account</span>
-                        </a>
-                    </div>
-                </section>
-            </div>
+            <Navbar/>
         </div>
     )
 }
