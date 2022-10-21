@@ -1,7 +1,7 @@
 import {BellAlertIcon, BriefcaseIcon, HomeIcon, SquaresPlusIcon, UserIcon} from "@heroicons/react/24/outline";
 
 const Navbar = ({ className }) => (
-    <div className={`${className} w-full h-screen`}>
+    <div className={`${className} w-full h-screen sm:block md:hidden lg:hidden xl:hidden 2xl:hidden block`}>
         <section id="bottom-navigation" className="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
             <div id="tabs" className="flex justify-between">
                 <a href="#"

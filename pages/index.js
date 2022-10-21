@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import {BellAlertIcon, BriefcaseIcon, HomeIcon, SquaresPlusIcon, UserIcon} from "@heroicons/react/24/outline";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import Header from "./components/header";
@@ -54,7 +52,7 @@ export default function Home() {
 
             <main className={styles.main}>
                 <section className="container mx-auto">
-                    <div className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3 place-content-start">
+                    <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-1 p-5 place-content-start">
                         <div>
                             <a href="#">
                                 <img className="rounded-t-lg w-96" src="/image-1.png"/>
