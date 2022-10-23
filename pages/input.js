@@ -7,9 +7,9 @@ import {
     UserIcon
 } from "@heroicons/react/24/outline";
 import Footer from "./components/footer";
-import Navbar from "./components/navbar";
-import Header from "./components/header";
-import Alert from "./components/alert";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Alert from "./components/Alert";
 
 export default function Input() {
     return (

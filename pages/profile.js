@@ -9,9 +9,9 @@ import {
     PencilSquareIcon, SquaresPlusIcon,
     UserIcon
 } from "@heroicons/react/24/outline";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
-import Header from "./components/header";
+import Header from "./components/Header";
 
 export default function Profile() {
     return (

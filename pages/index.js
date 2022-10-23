@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Footer from "./components/footer";
-import Navbar from "./components/navbar";
-import Header from "./components/header";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 
 export default function Home() {
     return (
@@ -15,44 +16,10 @@ export default function Home() {
 
             <Header children="welcome"/>
 
-            <div id="default-carousel" className="relative" data-carousel="static">
-                <div className="relative h-56 overflow-hidden md:h-96">
-                    <div
-                        className="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
-                        data-carousel-item="">
-                        <span
-                            className="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                        <img src="/carousel-1.svg"
-                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"/>
-                    </div>
-                    <div
-                        className="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
-                        data-carousel-item="">
-                        <img src="/carousel-1.svg"
-                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"/>
-                    </div>
-                    <div
-                        className="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
-                        data-carousel-item="">
-                        <img src="/carousel-1.svg"
-                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"/>
-                    </div>
-                </div>
-                <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                    <button type="button" className="w-3 h-3 rounded-full bg-white dark:bg-gray-800"
-                            aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button"
-                            className="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
-                            aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button"
-                            className="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
-                            aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                </div>
-            </div>
-
             <main className={styles.main}>
-                <section className="container mx-auto">
-                    <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-1 p-5 place-content-start">
+                <section className="flex container mx-auto">
+                    <Sidebar/>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-1 p-5 place-content-start">
                         <div>
                             <a href="#">
                                 <img className="rounded-t-lg w-96" src="/image-1.png"/>
