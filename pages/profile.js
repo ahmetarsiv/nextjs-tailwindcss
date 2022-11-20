@@ -1,17 +1,18 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import {
-    ArrowRightOnRectangleIcon, BellAlertIcon,
-    BookmarkIcon, BriefcaseIcon, CalendarDaysIcon,
+    ArrowRightOnRectangleIcon,
+    BookmarkIcon, CalendarDaysIcon,
     ChatBubbleLeftRightIcon, CheckCircleIcon, ChevronRightIcon, ComputerDesktopIcon,
     DevicePhoneMobileIcon, DocumentCheckIcon,
-    EnvelopeOpenIcon, HomeIcon, MapPinIcon,
-    PencilSquareIcon, SquaresPlusIcon,
+    EnvelopeOpenIcon, MapPinIcon,
+    PencilSquareIcon,
     UserIcon
 } from "@heroicons/react/24/outline";
 import Navbar from "./components/Navbar";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Modal from "./components/Modal";
 
 export default function Profile() {
     return (
@@ -48,7 +49,8 @@ export default function Profile() {
                     </div>
 
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-20">
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
+                        <Modal></Modal>
+                        <a href="#" data-modal-toggle="defaultModal" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
                             <div>
                                 <ChatBubbleLeftRightIcon className="text-purple-800 w-6 h-6 mr-2 float-left"/>
                                 <span className="text-zinc-500">Destek</span>
@@ -129,6 +131,8 @@ export default function Profile() {
                     </div>
                 </section>
             </main>
+
+            <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
 
             <Footer className={styles.footer}/>
 

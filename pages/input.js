@@ -1,12 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import {
-    BellAlertIcon, BriefcaseIcon, ChevronRightIcon, CloudArrowUpIcon,
-    HomeIcon, InformationCircleIcon, SquaresPlusIcon,
-    UserIcon
+    CloudArrowUpIcon
 } from "@heroicons/react/24/outline";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Alert from "./components/Alert";

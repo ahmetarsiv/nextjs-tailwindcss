@@ -3,7 +3,7 @@ import {
     SquaresPlusIcon
 } from "@heroicons/react/24/outline";
 
-const DataTable = ({ className, dateTime, examName, isActive }) => (
+const MenuTable = ({ className, dateTime, examName, isActive }) => (
     <a href="#" className={`${className} border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5`}>
         <div className="flex items-center">
             <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
@@ -17,4 +17,4 @@ const DataTable = ({ className, dateTime, examName, isActive }) => (
     </a>
 )
 
-export default DataTable
+export default MenuTable

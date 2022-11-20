@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
+import ReactDOM from "react-dom/client";
 
 export default function Home() {
+    const root = ReactDOM.createRoot(document.getElementById('root'));
     return (
         <div>
             <Head>

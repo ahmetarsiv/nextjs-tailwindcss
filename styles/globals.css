@@ -28,3 +28,9 @@ a {
     background: black;
   }
 }
+
+.fade-in-right {
+  transform: translateY(100%);
+  transition-timing-function: ease-in;
+  transition: 0.2s;
+}
