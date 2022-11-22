@@ -29,7 +29,7 @@ export default function Profile() {
                 <section className="container mx-auto">
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md">
                         <div className="border-b dark:border-gray-700 p-5">
-                            <div className="bg-white shadow-md rounded-lg w-10 h-10 absolute right-5 md:right-44 p-2">
+                            <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg w-10 h-10 absolute right-5 md:right-44 p-2">
                                 <PencilSquareIcon className="text-purple-800 w-6 h-6"/>
                             </div>
                             <UserIcon className="text-purple-800 w-12 h-12 mr-2 float-left"/>
@@ -50,7 +50,7 @@ export default function Profile() {
 
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-20">
                         <Modal></Modal>
-                        <a href="#" data-modal-toggle="defaultModal" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
+                        <a href="#" data-modal-toggle="defaultModal" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                             <div>
                                 <ChatBubbleLeftRightIcon className="text-purple-800 w-6 h-6 mr-2 float-left"/>
                                 <span className="text-zinc-500">Destek</span>
@@ -59,7 +59,7 @@ export default function Profile() {
                             </div>
                         </a>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                             <div>
                                 <MapPinIcon className="text-purple-800 w-6 h-6 mr-2 float-left"/>
                                 <span className="text-zinc-500">Adreslerim</span>
@@ -67,7 +67,7 @@ export default function Profile() {
                             </div>
                         </a>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                             <div>
                                 <BookmarkIcon className="text-purple-800 w-6 h-6 mr-2 float-left"/>
                                 <span className="text-zinc-500">Derslerim</span>
@@ -75,7 +75,7 @@ export default function Profile() {
                             </div>
                         </a>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                             <div>
                                 <DocumentCheckIcon className="text-purple-800 w-6 h-6 mr-2 float-left"/>
                                 <span className="text-zinc-500">Sonuçlarım</span>
@@ -83,7 +83,7 @@ export default function Profile() {
                             </div>
                         </a>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                             <div>
                                 <CalendarDaysIcon className="text-purple-800 w-6 h-6 mr-2 float-left"/>
                                 <span className="text-zinc-500">Randevularım</span>
@@ -92,7 +92,7 @@ export default function Profile() {
                             </div>
                         </a>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                             <div>
                                 <ComputerDesktopIcon className="text-purple-800 w-6 h-6 mr-2 float-left"/>
                                 <span className="text-zinc-500">Canlı Derslerim</span>
@@ -100,7 +100,7 @@ export default function Profile() {
                             </div>
                         </a>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                             <div>
                                 <ArrowRightOnRectangleIcon className="text-purple-800 w-6 h-6 mr-2 float-left"/>
                                 <span className="text-zinc-500">Çıkış Yap</span>
@@ -112,7 +112,7 @@ export default function Profile() {
 
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-5">
                         <label className="text-zinc-500 text-xs pl-5">Versiyon</label>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                             <div>
                                 <span className="text-zinc-500">2.13.12</span>
                                 <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
@@ -122,7 +122,7 @@ export default function Profile() {
 
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-20">
                         <label className="text-zinc-500 text-xs pl-5">Language - Dil</label>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5">
+                        <a href="#" className="border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                             <div>
                                 <span className="text-zinc-500">Türkçe</span>
                                 <ChevronRightIcon className="text-purple-800 w-6 h-6 float-right"/>
@@ -132,7 +132,7 @@ export default function Profile() {
                 </section>
             </main>
 
-            <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+            <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"/>
 
             <Footer className={styles.footer}/>
 

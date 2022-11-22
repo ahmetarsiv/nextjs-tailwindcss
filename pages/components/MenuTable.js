@@ -4,7 +4,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 const MenuTable = ({ className, dateTime, examName, isActive }) => (
-    <a href="#" className={`${className} border-b dark:border-gray-700 hover:bg-slate-50 focus:bg-slate-50 w-full h-full p-5`}>
+    <a href="#" className={`${className} border-b dark:border-gray-700 hover:bg-slate-50 dark:hover:bg-gray-900 focus:bg-slate-50 w-full h-full p-5`}>
         <div className="flex items-center">
             <SquaresPlusIcon className="text-purple-800 w-12 h-12 mr-2"/>
             <div className="inline-flex flex-col w-full">

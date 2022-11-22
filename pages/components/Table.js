@@ -36,20 +36,20 @@ export default function Table({head, body, searchable}) {
                         onChange={e => setSearch(e.target.value)}
                         type="text"
                         placeholder="Tabloda ara"
-                        className="border border-purple-700 focus:border-purple-100 text-sm rounded-lg w-full p-2.5"
+                        className="border border-purple-700 focus:border-purple-100 dark:bg-gray-900 text-sm rounded-lg w-full p-2.5"
                     />
                 </div>
             )}
             {isMobile && <TableMobile head={head} body={filteredData}/>}
             {!isMobile && (
-                <div className="w-full  border rounded p4">
+                <div className="w-full rounded p4">
                     <table className="w-full">
                         <thead>
                         <tr>
                             {head.map((h, key) => (
                                 <th
                                     width={h?.width}
-                                    className="text-left bg-gray-50 text-sm font-semibold text-gray-500 p-3 border-b"
+                                    className="text-left bg-gray-50 dark:bg-gray-900 text-sm font-semibold text-gray-500 dark:text-white p-3"
                                     key={key}>
                                     <div className="inline-flex items-center gap-x-2">
                                         {h.name}
@@ -79,7 +79,7 @@ export default function Table({head, body, searchable}) {
                             <tr className="group" key={key}>
                                 {items.map((item, key) => (
                                     <td
-                                        className="p-3 text-sm group-hover:bg-purple-50 group-hover:text-purple-600"
+                                        className="p-3 text-sm group-hover:bg-purple-50 dark:group-hover:bg-gray-900 group-hover:text-purple-600"
                                         key={key}>
                                         {Array.isArray(item) ? (
                                             <div className="flex gap-x-2.5">

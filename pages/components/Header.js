@@ -1,12 +1,12 @@
 import {HomeIcon, UserIcon} from "@heroicons/react/24/outline";
 
 const Header = ({ className, children }) => (
-    <header className={`${className} bg-purple-800 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900`}>
-        <div className="font-medium text-yellow-400 text-2xl text-center sm:block md:blcok lg:hidden xl:hidden 2xl:hidden block">
-            <a href="#">{children}</a>
+    <header className={`${className} bg-purple-800 border-gray-200 px-2 sm:px-4 py-2.5`}>
+        <div className="font-medium text-yellow-400 text-2xl text-center sm:block md:blcok lg:blcok xl:blcok 2xl:blcok block">
+            <a href="/">{children}</a>
         </div>
 
-        <div className="container mx-auto sm:hidden md:hidden lg:block xl:block 2xl:block hidden py-2.5">
+        {/*<div className="container mx-auto sm:hidden md:hidden lg:block xl:block 2xl:block hidden py-2.5">
             <div className="flex justify-between">
                 <span className="font-medium text-yellow-400 text-2xl">{children}</span>
                 <a href="#">
@@ -27,7 +27,7 @@ const Header = ({ className, children }) => (
                 <li><a href="#" className="pr-12 hover:text-yellow-400">Exam</a></li>
                 <li><a href="#" className="pr-12 hover:text-yellow-400">Company</a></li>
             </ul>
-        </div>
+        </div>*/}
     </header>
 )
 

@@ -3,9 +3,9 @@ import Button from "/pages/components/Button";
 
 export default function Modal({...props}){
     return (
-        <div id="defaultModal" tabIndex="-1" aria-hidden="true" className="fade-in-right hidden overflow-y-auto overflow-x-hidden fixed top-0 left-0 z-50 md:inset-0 w-screen h-screen" {...props}>
+        <div id="defaultModal" tabIndex="-1" aria-hidden="true" className="hidden overflow-y-auto overflow-x-hidden fixed top-0 left-0 z-50 md:inset-0 w-screen h-screen" {...props}>
             <div className="absolute w-screen h-screen">
-                <div className="relative bg-white w-screen h-screen shadow dark:bg-gray-700">
+                <div className="relative bg-white w-screen h-screen shadow dark:bg-gray-900">
 
                     <div className="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
