@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
+import Avatar from "./components/Avatar";
 
 export default function Home() {
     return (
@@ -16,9 +16,11 @@ export default function Home() {
 
             <Header children="welcome"/>
 
-            <main className="flex">
-                <Sidebar/>
-                <section className="container mx-auto">
+            <main className="flex-none">
+                <Avatar className="sm:block md:blcok lg:hidden xl:hidden 2xl:hidden block"/>
+                <div className="flex">
+                    <Sidebar/>
+                    <section className="container mx-auto">
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-1 p-5 place-content-start">
                             <div>
                                 <a href="#">
@@ -47,6 +49,7 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
+                </div>
             </main>
 
             <Footer className=""/>
