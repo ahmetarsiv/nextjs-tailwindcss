@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
-import Avatar from "./components/Avatar";
+import Join from "./components/Join";
 
 export default function Home() {
     return (
@@ -16,43 +16,41 @@ export default function Home() {
 
             <Header children="welcome"/>
 
-            <main className="flex-none">
-                <Avatar className="sm:block md:blcok lg:hidden xl:hidden 2xl:hidden block"/>
-                <div className="flex">
-                    <Sidebar/>
-                    <section className="container mx-auto">
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-1 p-5 place-content-start">
-                            <div>
-                                <a href="#">
-                                    <img className="rounded-t-lg w-96" src="/image-1.png"/>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img className="rounded-t-lg w-96" src="/image-2.png"/>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img className="rounded-t-lg w-96" src="/image-3.png"/>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img className="rounded-t-lg w-96" src="/image-4.png"/>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img className="rounded-t-lg w-96" src="/image-5.png"/>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </main>
+            <main className="pt-16">
+                <Sidebar/>
 
-            <Footer className=""/>
+                <section className="container mx-auto float-none sm:px-0 md:px-0 lg:px-64 xl:px-64 2xl:px-64">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-1 p-5 place-content-start">
+                        <div>
+                            <a href="#">
+                                <img className="rounded-t-lg w-96" src="/image-1.png"/>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img className="rounded-t-lg w-96" src="/image-2.png"/>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img className="rounded-t-lg w-96" src="/image-3.png"/>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img className="rounded-t-lg w-96" src="/image-4.png"/>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img className="rounded-t-lg w-96" src="/image-5.png"/>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <Join/>
+            </main>
 
             <Navbar/>
         </div>

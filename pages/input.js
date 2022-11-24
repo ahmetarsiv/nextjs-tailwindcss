@@ -26,7 +26,7 @@ export default function Input() {
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 p-5">
                         <div className="mb-5">
                             <label className="cursor-pointer flex w-full max-w-lg flex-col items-center rounded-xl border-2 border-dashed border-purple-400 p-6">
-                                <CloudArrowUpIcon className="h-10 w-10 text-purple-800"/>
+                                <CloudArrowUpIcon className="h-10 w-10 text-blue"/>
                                 <h2 className="mt-4 text-xl font-medium text-gray-700 tracking-wide">Image File</h2>
                                 <p className="mt-2 text-gray-500 tracking-wide">Upload or darg & drop your file SVG,
                                     PNG, JPG or GIF.</p>

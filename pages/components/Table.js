@@ -23,7 +23,7 @@ export default function Table({head, body, searchable}) {
 
     if (!body || body?.length === 0) {
         return (
-            <div className="p-4 rounded bg-yellow-100 text-yellow-700 text-sm">Gösterilecek veri bulunmuyor.</div>
+            <div className="p-4 rounded bg-gray-100 text-blue-700 text-sm">Gösterilecek veri bulunmuyor.</div>
         )
     }
 
@@ -36,7 +36,7 @@ export default function Table({head, body, searchable}) {
                         onChange={e => setSearch(e.target.value)}
                         type="text"
                         placeholder="Tabloda ara"
-                        className="border border-purple-700 focus:border-purple-100 dark:bg-gray-900 text-sm rounded-lg w-full p-2.5"
+                        className="border border-blue-700 focus:border-blue-100 dark:bg-gray-900 text-sm rounded-lg w-full p-2.5"
                     />
                 </div>
             )}
@@ -79,7 +79,7 @@ export default function Table({head, body, searchable}) {
                             <tr className="group" key={key}>
                                 {items.map((item, key) => (
                                     <td
-                                        className="p-3 text-sm group-hover:bg-purple-50 dark:group-hover:bg-gray-900 group-hover:text-purple-600"
+                                        className="p-3 text-sm group-hover:bg-blue-50 dark:group-hover:bg-gray-900 group-hover:text-blue-600"
                                         key={key}>
                                         {Array.isArray(item) ? (
                                             <div className="flex gap-x-2.5">
