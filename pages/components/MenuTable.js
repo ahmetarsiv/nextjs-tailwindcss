@@ -2,10 +2,11 @@ import {
     ChevronRightIcon,
     SquaresPlusIcon
 } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const MenuTable = ({ className, dateTime, examName, isActive }) => (
-    <a href="#" className={`${className} border-b dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 focus:bg-gray-100 w-full h-full p-5`}>
-        <div className="flex items-center">
+    <Link href="">
+        <div className={`${className} flex items-center border-b dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 focus:bg-gray-100 w-full h-full p-5`}>
             <SquaresPlusIcon className="text-blue w-12 h-12 mr-2"/>
             <div className="inline-flex flex-col w-full">
                 <span className="text-blue">{dateTime}</span>
@@ -14,7 +15,7 @@ const MenuTable = ({ className, dateTime, examName, isActive }) => (
             <label className="bg-blue-400 text-white rounded-lg text-xs font-medium p-1 mr-10">{isActive}</label>
             <ChevronRightIcon className="text-blue w-8 h-8"/>
         </div>
-    </a>
+    </Link>
 )
 
 export default MenuTable

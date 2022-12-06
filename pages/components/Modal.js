@@ -1,9 +1,11 @@
 import Input from "/pages/components/Input";
 import Button from "/pages/components/Button";
+import Script from "next/script";
 
-export default function Modal({...props}){
+export default function Modal({...props}) {
     return (
-        <div id="defaultModal" tabIndex="-1" aria-hidden="true" className="hidden overflow-y-auto overflow-x-hidden fixed top-0 left-0 z-50 md:inset-0 w-screen h-screen" {...props}>
+        <div id="defaultModal" tabIndex="-1" aria-hidden="true"
+             className="hidden overflow-y-auto overflow-x-hidden fixed top-0 left-0 z-50 md:inset-0 w-screen h-screen" {...props}>
             <div className="absolute w-screen h-screen">
                 <div className="relative bg-white w-screen h-screen shadow dark:bg-gray-900">
 
@@ -23,13 +25,14 @@ export default function Modal({...props}){
                             <span className="sr-only">Close modal</span>
                         </button>
                     </div>
-
                     <div className="p-6 space-y-6">
                         <Input></Input>
                         <Button>Submit</Button>
                     </div>
                 </div>
             </div>
+
+            <Script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"/>
         </div>
     )
 }

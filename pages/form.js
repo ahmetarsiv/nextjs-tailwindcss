@@ -17,7 +17,7 @@ export default function Table() {
 
             <Header children="table"/>
 
-            <main className={styles.main}>
+            <main className="pt-16">
                 <section className="container mx-auto">
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 p-5">
                         <form>
@@ -42,8 +42,6 @@ export default function Table() {
                     </div>
                 </section>
             </main>
-
-            <Footer className={styles.footer}/>
 
             <Navbar/>
         </div>

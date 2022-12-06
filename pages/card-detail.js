@@ -1,11 +1,13 @@
-import Head from 'next/head'
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Join from "./components/Join";
-import Card from "./components/Card";
+import Header from "./components/Header";
+import Head from "next/head";
+import Navbar from "./components/Navbar";
+import {ArrowLeftIcon} from "@heroicons/react/24/outline";
+import Link from "next/link";
+import Single from "./components/Single";
 
-export default function Home() {
+export default function CardDetail() {
     return (
         <div>
             <Head>
@@ -14,15 +16,17 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Header children="welcome"/>
+            <Header children="card detail"/>
 
             <main className="pt-16">
+                <Link href="/">
+                    <ArrowLeftIcon className="fixed text-white top-4 left-4 w-6 h-6 z-10"></ArrowLeftIcon>
+                </Link>
+
                 <Sidebar/>
 
                 <section className="container mx-auto sm:px-0 md:px-0 lg:px-64 xl:px-64 2xl:px-64">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-1 p-5">
-                        <Card href="card-detail"/>
-                    </div>
+                    <Single/>
                 </section>
 
                 <Join/>

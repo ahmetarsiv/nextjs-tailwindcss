@@ -8,6 +8,8 @@ import Alert from "./components/Alert";
 import Table from "./components/Table";
 import {useState} from "react";
 import {Bars2Icon} from "@heroicons/react/24/outline";
+import Script from "next/script";
+import Link from "next/link";
 
 export default function Menu() {
     const [users, setUsers] = useState(() => [
@@ -58,7 +60,7 @@ export default function Menu() {
 
             <Header children="table"/>
 
-            <main className={styles.main}>
+            <main className="pt-16">
                 <section className="container mx-auto">
                     <Alert type="Info alert!" message="It was modeled on the exam results page, task: table"/>
 
@@ -84,9 +86,15 @@ export default function Menu() {
                                 <div id="dropdownDots" className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
                                     <ul className="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
                                         <li>
-                                            <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Düzenle</a>
-                                            <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Görüntüle</a>
-                                            <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sil</a>
+                                            <Link href="">
+                                                <span className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Düzenle</span>
+                                            </Link>
+                                            <Link href="">
+                                                <span className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Görüntüle</span>
+                                            </Link>
+                                            <Link href="">
+                                                <span className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sil</span>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>,
@@ -97,10 +105,8 @@ export default function Menu() {
                         ]))}
                     />
                 </section>
-                <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+                <Script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"/>
             </main>
-
-            <Footer className={styles.footer}/>
 
             <Navbar/>
         </div>

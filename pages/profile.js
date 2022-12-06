@@ -13,8 +13,9 @@ import {
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Modal from "./components/Modal";
 
+import Modal from "./components/Modal";
+import Link from "next/link";
 export default function Profile() {
     return (
         <div>
@@ -27,9 +28,10 @@ export default function Profile() {
             <Header children="profile"/>
 
             <main className="pt-16">
-                <a href="/">
-                    <ArrowLeftIcon className="fixed text-white top-4 left-4 w-6 h-6"></ArrowLeftIcon>
-                </a>
+                <Link href="/">
+                    <ArrowLeftIcon className="fixed text-white top-4 left-4 w-6 h-6 z-10"></ArrowLeftIcon>
+                </Link>
+
                 <section className="container mx-auto">
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md">
                         <div className="border-b dark:border-gray-700 p-5">
@@ -54,89 +56,88 @@ export default function Profile() {
 
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-20">
                         <Modal></Modal>
-                        <a href="#" data-modal-toggle="defaultModal" className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
-                            <div>
-                                <ChatBubbleLeftRightIcon className="text-blue w-6 h-6 mr-2 float-left"/>
-                                <span className="text-gray-500 dark:text-gray-300">Destek</span>
-                                <span className="bg-blue text-white rounded-lg text-xs font-medium p-1 ml-10">Yeni</span>
-                                <ChevronRightIcon className="text-blue w-6 h-6 float-right"/>
-                            </div>
-                        </a>
+                        <Link href="">
+                            <a data-modal-toggle="defaultModal">
+                                <div className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
+                                    <ChatBubbleLeftRightIcon className="text-blue w-6 h-6 mr-2 float-left"/>
+                                    <span className="text-gray-500 dark:text-gray-300">Destek</span>
+                                    <span className="bg-blue text-white rounded-lg text-xs font-medium p-1 ml-10">Yeni</span>
+                                    <ChevronRightIcon className="text-blue w-6 h-6 float-right"/>
+                                </div>
+                            </a>
+                        </Link>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
-                            <div>
+                        <Link href="">
+                            <div className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                                 <MapPinIcon className="text-blue w-6 h-6 mr-2 float-left"/>
                                 <span className="text-gray-500 dark:text-gray-300">Adreslerim</span>
                                 <ChevronRightIcon className="text-blue w-6 h-6 float-right"/>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
-                            <div>
+                        <Link href="">
+                            <div className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                                 <BookmarkIcon className="text-blue w-6 h-6 mr-2 float-left"/>
                                 <span className="text-gray-500 dark:text-gray-300">Derslerim</span>
                                 <ChevronRightIcon className="text-blue w-6 h-6 float-right"/>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
-                            <div>
+                        <Link href="">
+                            <div className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                                 <DocumentCheckIcon className="text-blue w-6 h-6 mr-2 float-left"/>
                                 <span className="text-gray-500 dark:text-gray-300">Sonuçlarım</span>
                                 <ChevronRightIcon className="text-blue w-6 h-6 float-right"/>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
-                            <div>
+                        <Link href="">
+                            <div className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                                 <CalendarDaysIcon className="text-blue w-6 h-6 mr-2 float-left"/>
                                 <span className="text-gray-500 dark:text-gray-300">Randevularım</span>
                                 <span className="bg-blue text-white rounded-lg text-xs font-medium p-1 ml-10">Yeni</span>
                                 <ChevronRightIcon className="text-blue w-6 h-6 float-right"/>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
-                            <div>
+                        <Link href="">
+                            <div className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                                 <ComputerDesktopIcon className="text-blue w-6 h-6 mr-2 float-left"/>
                                 <span className="text-gray-500 dark:text-gray-300">Canlı Derslerim</span>
                                 <ChevronRightIcon className="text-blue w-6 h-6 float-right"/>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
-                            <div>
+                        <Link href="">
+                            <div className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                                 <ArrowRightOnRectangleIcon className="text-blue w-6 h-6 mr-2 float-left"/>
                                 <span className="text-gray-500 dark:text-gray-300">Çıkış Yap</span>
                                 <ChevronRightIcon className="text-blue w-6 h-6 float-right"/>
                             </div>
-                        </a>
+                        </Link>
                     </div>
-
 
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-5">
                         <label className="text-gray-500 dark:text-gray-300 text-xs pl-5">Versiyon</label>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
-                            <div>
+                        <Link href="">
+                            <div className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                                 <span className="text-gray-500 dark:text-gray-300">2.13.12</span>
                                 <ChevronRightIcon className="text-blue w-6 h-6 float-right"/>
                             </div>
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="grid grid-cols-1 gap-1 md:grid-cols-1 md:gap-1 shadow-md mt-20">
                         <label className="text-gray-500 dark:text-gray-300 text-xs pl-5">Language - Dil</label>
-                        <a href="#" className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
-                            <div>
+                        <Link href="">
+                            <div className="border-b dark:border-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900 w-full h-full p-5">
                                 <span className="text-gray-500 dark:text-gray-300">Türkçe</span>
                                 <ChevronRightIcon className="text-blue w-6 h-6 float-right"/>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </section>
             </main>
-
-            <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"/>
 
             <Footer className={styles.footer}/>
 

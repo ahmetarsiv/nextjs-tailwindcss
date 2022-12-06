@@ -56,8 +56,6 @@ export default function Input() {
                 </section>
             </main>
 
-            <Footer className={styles.footer}/>
-
             <Navbar/>
         </div>
 )

@@ -4,10 +4,10 @@ import Button from "./Button";
 
 export default function Join({className}) {
     return (
-        <nav className={`${className} fixed right-0 top-[52px] float-right rounded-lg drop-shadow-md sm:hidden md:hidden lg:block xl:block 2xl:block hidden p-3 w-64 h-screen`}>
+        <nav className={`${className} fixed right-0 top-[52px] rounded-lg drop-shadow-md sm:hidden md:hidden lg:block xl:block 2xl:block hidden p-3 w-64 h-screen`}>
             <div className="fixed right-0 top-0 bg-gray-50 dark:bg-gray-900 w-full h-screen">
                 <div className="p-5">
-                    <span className="bg-purple-100 text-blue text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900">PRO</span>
+                    <span className="bg-purple-100 text-blue text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900">PRO</span>
 
                     <div className="mt-5">
                         <h3 className="text-3xl font-bold dark:text-white">Mobile Design</h3>
@@ -27,21 +27,17 @@ export default function Join({className}) {
                     </div>
 
                     <div className="flex -space-x-4 mt-14">
-                        <img className="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800"
-                             src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"/>
-                        <img className="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800"
-                             src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"/>
-                        <img className="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800"
-                             src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"/>
-                        <a className="flex justify-center items-center w-10 h-10 text-xs font-medium text-white bg-gray-700 rounded-full border-2 border-white hover:bg-gray-600 dark:border-gray-800"
-                           href="#">+420</a>
+                        <img className="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800 placeholder" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"/>
+                        <img className="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"/>
+                        <img className="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"/>
+                        <span className="flex justify-center items-center w-10 h-10 text-xs font-medium text-white bg-gray-700 rounded-full border-2 border-white hover:bg-gray-600 dark:border-gray-800">+420</span>
                     </div>
 
-                    <ul className="list-none mt-5">
+                    <ul className="mt-5">
                         <li className="w-full h-full flex">
-                            <HomeIcon className="inline-block w-11 h-11 mr-10"/>
+                            <HomeIcon className="w-11 h-11 mr-10"/>
                             <div className="inline-flex flex-col w-full">
-                                <labe className="text-lg">12:00-13:00</labe>
+                                <label className="text-lg">12:00-13:00</label>
                                 <label className="text-xs dark:text-gray-400">Time</label>
                             </div>
                         </li>
