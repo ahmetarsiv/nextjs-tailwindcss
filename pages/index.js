@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Join from "./components/Join";
 import Card from "./components/Card";
+import {FunnelIcon} from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -20,7 +22,14 @@ export default function Home() {
                 <Sidebar/>
 
                 <section className="container mx-auto sm:px-0 md:px-0 lg:px-64 xl:px-64 2xl:px-64">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 gap-1 p-5">
+                    <Link href="">
+                        <div className="flex dark:text-white">
+                            <FunnelIcon className="w-6 h-6 mx-3"/>
+                            <span className="font-light">Sort by date</span>
+                        </div>
+                    </Link>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-1 p-5">
                         <Card href="card-detail"/>
                     </div>
                 </section>
