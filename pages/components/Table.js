@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {useMediaQuery} from '@react-hook/media-query';
 import TableMobile from "./TableMobile";
+import {ArrowSmallDownIcon, ArrowSmallUpIcon, ArrowsUpDownIcon} from "@heroicons/react/24/outline";
 
 export default function Table({head, body, searchable}) {
 
@@ -23,7 +24,7 @@ export default function Table({head, body, searchable}) {
 
     if (!body || body?.length === 0) {
         return (
-            <div className="p-4 rounded bg-gray-100 text-blue-700 text-sm">Gösterilecek veri bulunmuyor.</div>
+            <div className="p-4 rounded bg-gray-100 text-blue dark:bg-gray-900 text-sm">Gösterilecek veri bulunmuyor.</div>
         )
     }
 
@@ -67,6 +68,10 @@ export default function Table({head, body, searchable}) {
                                                     })
                                                 }
                                             }}>
+                                                {sorting?.key === key && (
+                                                    sorting.orderBy === 'asc' ? <ArrowSmallDownIcon className="w-3 h-3"/> : <ArrowSmallUpIcon className="w-3 h-3"/>
+                                                )}
+                                                {sorting?.key !== key && <ArrowsUpDownIcon className="w-3 h-3"/>}
                                             </button>
                                         )}
                                     </div>

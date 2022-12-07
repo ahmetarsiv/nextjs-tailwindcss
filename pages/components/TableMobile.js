@@ -1,6 +1,6 @@
 export default function TableMobile({head, body}) {
     return (
-        <div className="border rounded p-4 grid divide-y gap-y-4">
+        <div className="rounded p-4 grid divide-y gap-y-4">
             {body.map((items, key) => (
                 <section className="pt-4 first:pt-0 grid gap-y-2">
                     {items.map((item, key) => Array.isArray(item) ? (

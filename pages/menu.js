@@ -10,7 +10,7 @@ import Script from "next/script";
 import Link from "next/link";
 
 export default function Menu() {
-    const [users, setUsers] = useState(() => [
+    const [users] = useState(() => [
         {
             name: 'Ahmet Sefa',
             surname: 'Arşiv',
@@ -81,24 +81,12 @@ export default function Menu() {
                             user.email,
                             <div searchableText={`Yaş ${user.age}`}>{user.age}</div>,
                             [
-                                <div id="dropdownDots" className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
-                                    <ul className="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
-                                        <li>
-                                            <Link href="">
-                                                <span className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Düzenle</span>
-                                            </Link>
-                                            <Link href="">
-                                                <span className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Görüntüle</span>
-                                            </Link>
-                                            <Link href="">
-                                                <span className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sil</span>
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>,
-                                <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" type="button">
-                                    <Bars2Icon className="w-6 h-6"/>
-                                </button>
+                                <Link href="">
+                                    <span className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Görüntüle</span>
+                                </Link>,
+                                <Link href="">
+                                    <span className="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Kaldır</span>
+                                </Link>
                             ]
                         ]))}
                     />
