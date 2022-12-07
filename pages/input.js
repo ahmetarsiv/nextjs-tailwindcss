@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import {
     CloudArrowUpIcon
 } from "@heroicons/react/24/outline";
@@ -19,7 +18,7 @@ export default function Input() {
 
             <Header children="input"/>
 
-            <main className={styles.main}>
+            <main className="pt-16">
                 <section className="container mx-auto">
                     <Alert type="Info alert!" message="You can get the input components here"/>
 

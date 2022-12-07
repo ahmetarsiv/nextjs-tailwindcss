@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import {
     ArrowLeftIcon,
     ArrowRightOnRectangleIcon,
@@ -13,9 +12,9 @@ import {
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-
 import Modal from "./components/Modal";
 import Link from "next/link";
+
 export default function Profile() {
     return (
         <div>
@@ -139,7 +138,7 @@ export default function Profile() {
                 </section>
             </main>
 
-            <Footer className={styles.footer}/>
+            <Footer/>
 
             <Navbar/>
         </div>

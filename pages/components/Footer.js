@@ -1,13 +1,13 @@
-import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "../../public/imtihan-default.webp";
 
 const Footer = ({className}) => (
     <footer className={`${className} flex justify-center py-8 w-full`}>
         <Link href="/">
-            <span className={styles.logo}>
-                <Image src="/vercel.svg" width={72} height={16}/>
-            </span>
+            <>
+                <Image src={Logo} width={72} height={16}/>
+            </>
         </Link>
     </footer>
 )

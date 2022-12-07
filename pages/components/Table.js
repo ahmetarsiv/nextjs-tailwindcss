@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {useMediaQuery, useMediaQueries} from '@react-hook/media-query';
+import {useMediaQuery} from '@react-hook/media-query';
 import TableMobile from "./TableMobile";
 
 export default function Table({head, body, searchable}) {
