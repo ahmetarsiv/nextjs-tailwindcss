@@ -12,7 +12,7 @@ const Single = () => (
                             </span>
         </div>
 
-        <Image src={cardImage} className="max-w-full h-auto rounded-lg duration-300 filter grayscale hover:grayscale-0"/>
+        <Image src={cardImage} placeholder="blur" className="max-w-full h-auto rounded-lg duration-300 filter grayscale hover:grayscale-0"/>
 
         <hr className="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
 

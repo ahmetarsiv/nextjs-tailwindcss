@@ -5,7 +5,7 @@ import cardImage from "../../public/image-1@2x.jpg";
 const Card = ({ className, href }) => (
     <Link href={href}>
         <div className={`${className} w-full rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 text-white`}>
-            <Image src={cardImage} className="rounded-t-lg"/>
+            <Image src={cardImage} placeholder="blur" className="rounded-t-lg"/>
 
             <div className="p-5">
                 <span className="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2 dark:bg-gray-700 dark:text-gray-300">
