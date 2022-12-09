@@ -28,10 +28,10 @@ function MyApp({Component, pageProps}) {
         };
     }, [router]);
     return (
-        <>
+        <main className="select-none">
             <Progress isAnimating={isAnimating}/>
             <Component {...pageProps} />
-        </>
+        </main>
     );
 }
 
