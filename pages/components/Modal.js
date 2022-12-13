@@ -1,6 +1,6 @@
-import Input from "/pages/components/Input";
-import Button from "/pages/components/Button";
+import Button from "./Button";
 import Script from "next/script";
+import Input from "./Input";
 
 export default function Modal({...props}) {
     return (

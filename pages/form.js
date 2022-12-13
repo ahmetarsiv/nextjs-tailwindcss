@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/bar/Navbar";
 import Input from "./components/Input";
 import Button from "./components/Button";
 
@@ -13,7 +13,7 @@ export default function Table() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Header children="table"/>
+            <Header name="table"/>
 
             <main className="pt-16">
                 <section className="container mx-auto">

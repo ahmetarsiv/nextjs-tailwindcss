@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import MenuTable from "./components/MenuTable";
+import Navbar from "./components/bar/Navbar";
+import MenuTable from "./components/table/MenuTable";
 import Alert from "./components/Alert";
-import Table from "./components/Table";
+import Table from "./components/table/Table";
 import {useState} from "react";
 import {Bars2Icon} from "@heroicons/react/24/outline";
 import Script from "next/script";
@@ -56,7 +56,7 @@ export default function Menu() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Header children="table"/>
+            <Header name="table"/>
 
             <main className="pt-16">
                 <section className="container mx-auto">

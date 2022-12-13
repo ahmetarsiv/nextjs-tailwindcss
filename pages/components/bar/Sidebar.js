@@ -1,4 +1,4 @@
-import Avatar from "./Avatar";
+import Avatar from "../Avatar";
 import {
     ArrowLeftOnRectangleIcon,
     BellAlertIcon,
@@ -34,7 +34,7 @@ export default function Sidebar( className) {
                         <BriefcaseIcon className="inline-block w-6 h-6"/> <label>Company</label>
                     </li>
                 </Link>
-                <Link href="/profile">
+                <Link href="profile">
                     <li className="p-5 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg">
                         <UserIcon className="inline-block w-6 h-6"/> <label>Account</label>
                     </li>

@@ -1,11 +1,11 @@
-import Sidebar from "./components/Sidebar";
-import Join from "./components/Join";
+import Sidebar from "./components/bar/Sidebar";
+import Join from "./components/bar/Join";
 import Header from "./components/Header";
 import Head from "next/head";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/bar/Navbar";
 import {ArrowLeftIcon} from "@heroicons/react/24/outline";
 import Link from "next/link";
-import Single from "./components/Single";
+import Single from "./components/card/Single";
 
 export default function CardDetail() {
     return (
@@ -16,7 +16,7 @@ export default function CardDetail() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Header children="card detail"/>
+            <Header name="card detail"/>
 
             <main className="pt-16">
                 <Link href="/">

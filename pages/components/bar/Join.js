@@ -1,6 +1,6 @@
 import {HomeIcon
 } from "@heroicons/react/24/outline";
-import Button from "./Button";
+import Button from "../Button";
 
 export default function Join({className}) {
     return (

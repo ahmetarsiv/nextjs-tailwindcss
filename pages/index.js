@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Navbar from "./components/Navbar";
+import Navbar from "./components/bar/Navbar";
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Join from "./components/Join";
-import Card from "./components/Card";
+import Sidebar from "./components/bar/Sidebar";
+import Join from "./components/bar/Join";
+import Card from "./components/card/Card";
 import {FunnelIcon} from "@heroicons/react/24/outline";
 import Link from "next/link";
 
@@ -16,7 +16,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Header children="welcome"/>
+            <Header name="welcome"/>
 
             <main className="pt-16">
                 <Sidebar/>

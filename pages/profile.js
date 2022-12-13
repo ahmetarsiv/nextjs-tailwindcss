@@ -9,7 +9,7 @@ import {
     PencilSquareIcon,
     UserIcon
 } from "@heroicons/react/24/outline";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/bar/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Modal from "./components/Modal";
@@ -24,7 +24,7 @@ export default function Profile() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Header children="profile"/>
+            <Header name="profile"/>
 
             <main className="pt-16">
                 <Link href="/">
